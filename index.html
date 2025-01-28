@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKIB & ASSOCIATES - Leading Law Firm in Bangladesh</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #1a2a3a;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #cdaa7d;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            min-height: 80vh;
+        }
+
+        .hero-left {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: #1a2a3a;
+            line-height: 1.2;
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: fit-content;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-right {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Practice Areas */
+        .practice-areas {
+            background: #f5f6fa;
+            padding: 6rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: #1a2a3a;
+            font-size: 2.5rem;
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .area-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .area-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .area-card h3 {
+            color: #cdaa7d;
+            margin-bottom: 1rem;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 6rem 2rem;
+            background: white;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border: 4px solid #cdaa7d;
+        }
+
+        .team-member h3 {
+            color: #1a2a3a;
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a2a3a;
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .office-info p {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #cdaa7d;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #304050;
+        }
+
+        .footer-bottom a {
+            color: #cdaa7d;
+            text-decoration: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 4rem 1rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home" class="logo">NAKIB & ASSOCIATES</a>
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#practice">PRACTICE AREAS</a>
+                <a href="#team">ATTORNEYS</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-left">
+            <h1>NAKIB & ASSOCIATES</h1>
+            <button class="whatsapp-btn" onclick="window.open('https://wa.me/8801310177588')">Book Appointment</button>
+        </div>
+        <div class="hero-right">
+            <p>Nakib & Associates was founded in 2001 by Advocate Nakib Saiful Islam, a graduate of Dhaka University and a highly respected lawyer in Bangladesh. Known as one of the leading experts in corporate law, Mr. Islam has extensive experience in areas like banking, telecommunications, project financing, and advising foreign investors. His strong knowledge of constitutional law and role as an arbitrator in both local and international disputes have made him a trusted name in the legal field.</p>
+            <br>
+            <p>In 2009, the firm grew into one of the top full-service law firms in Bangladesh, focusing on corporate, financial, and commercial matters. Over the years, it has built a strong reputation for handling important legal cases and transactions, both in court and through alternative dispute resolution (ADR). The firm is committed to providing high-quality legal services in a professional and client-friendly way, making a lasting impact in various sectors across the country.</p>
+        </div>
+    </section>
+
+    <section class="practice-areas" id="practice">
+        <h2 class="section-title">PRACTICE AREAS</h2>
+        <div class="areas-grid">
+            <div class="area-card">
+                <h3>COMMERCIAL LAW & LITIGATION</h3>
+                <p>Nakib & Associates has a proven track record of handling complex commercial law cases and providing expert litigation services to protect our clients' interests.</p>
+            </div>
+            <div class="area-card">
+                <h3>INSOLVENCY & RESTRUCTURING</h3>
+                <p>Our firm offers strategic counsel and representation in insolvency matters, helping clients navigate through challenging financial situations with tailored solutions.</p>
+            </div>
+            <div class="area-card">
+                <h3>BUSINESS ADVISORY</h3>
+                <p>Nakib & Associates provides comprehensive business advisory services, guiding clients through various legal aspects to support their business growth and compliance.</p>
+            </div>
+            <div class="area-card">
+                <h3>FRAUD</h3>
+                <p>With a focus on proactive measures, we assist clients in preventing fraudulent activities and offer strong legal representation in fraud-related cases.</p>
+            </div>
+            <div class="area-card">
+                <h3>DISPUTE RESOLUTION</h3>
+                <p>We are dedicated to resolving disputes efficiently through negotiation, mediation, and, when necessary, aggressive litigation, to achieve favorable outcomes for our clients.</p>
+            </div>
+            <div class="area-card">
+                <h3>TAX LAW</h3>
+                <p>Our experienced tax attorneys provide insightful counsel and representation in tax-related matters, ensuring compliance and minimizing tax liabilities for our clients.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <h2 class="section-title">OUR TEAM</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="nakib.jpg" alt="Nakib Saiful Islam">
+                <h3>NAKIB SAIFUL ISLAM</h3>
+                <p>FOUNDER & MANAGING PARTNER</p>
+                <p>Advocate, Supreme Court of Bangladesh<br>Appellate Division</p>
+            </div>
+            <div class="team-member">
+                <img src="fahad.jpg" alt="Fahad Mahmud">
+                <h3>FAHAD MAHMUD</h3>
+                <p>PARTNER</p>
+                <p>Barrister-At-Law<br>Supreme Court of Bangladesh</p>
+            </div>
+            <div class="team-member">
+                <img src="aminul.jpg" alt="Aminul Islam">
+                <h3>AMINUL ISLAM</h3>
+                <p>PARTNER</p>
+                <p>Advocate<br>Supreme Court of Bangladesh</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="office-info">
+                <h3>OUR OFFICE</h3>
+                <p>House # S-2 (4th Floor), Sarkar Plaza, Avenue-3, Block-D,<br>
+                Central Mosque Compound, Rampura Banasree,<br>
+                Dhaka-1219</p>
+                <p>Tel: +880-1310-177588</p>
+                <p>Email: nakib2k19@gmail.com</p>
+            </div>
+            <div class="contact-form">
+                <h3>CONTACT US</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="#home">Back to Top</a>
+            <p>© <span id="year"></span> NAKIB & ASSOCIATES. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will respond shortly.');
+            this.reset();
+        });
+
+        // Copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
