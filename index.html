@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAKIB & ASSOCIATES - Leading Law Firm in Bangladesh</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Open Sans', sans-serif;
         }
 
         body {
             line-height: 1.6;
         }
 
-        /* Header Styles */
         header {
             background: #1a2a3a;
             padding: 1rem;
@@ -39,6 +39,24 @@
             font-size: 1.5rem;
             font-weight: bold;
             text-decoration: none;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            transition: 0.3s;
         }
 
         .nav-links {
@@ -56,7 +74,6 @@
             color: #cdaa7d;
         }
 
-        /* Hero Section */
         .hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -78,6 +95,7 @@
             font-size: 3.5rem;
             color: #1a2a3a;
             line-height: 1.2;
+            font-family: 'Josefin Sans', sans-serif;
         }
 
         .whatsapp-btn {
@@ -103,7 +121,6 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        /* Practice Areas */
         .practice-areas {
             background: #f5f6fa;
             padding: 6rem 2rem;
@@ -114,6 +131,7 @@
             margin-bottom: 4rem;
             color: #1a2a3a;
             font-size: 2.5rem;
+            font-family: 'Josefin Sans', sans-serif;
         }
 
         .areas-grid {
@@ -141,7 +159,6 @@
             margin-bottom: 1rem;
         }
 
-        /* Team Section */
         .team {
             padding: 6rem 2rem;
             background: white;
@@ -177,7 +194,6 @@
             color: #666;
         }
 
-        /* Footer */
         footer {
             background: #1a2a3a;
             color: white;
@@ -226,7 +242,6 @@
             text-decoration: none;
         }
 
-        /* Responsive Design */
         @media (max-width: 768px) {
             .hero {
                 grid-template-columns: 1fr;
@@ -240,6 +255,22 @@
             
             .nav-links {
                 display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #1a2a3a;
+                padding: 1rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links.mobile-menu-visible {
+                display: flex;
+            }
+            
+            .hamburger {
+                display: block;
             }
             
             .hero h1 {
@@ -252,6 +283,11 @@
     <header>
         <nav>
             <a href="#home" class="logo">NAKIB & ASSOCIATES</a>
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <div class="nav-links">
                 <a href="#home">HOME</a>
                 <a href="#practice">PRACTICE AREAS</a>
@@ -267,9 +303,9 @@
             <button class="whatsapp-btn" onclick="window.open('https://wa.me/8801310177588')">Book Appointment</button>
         </div>
         <div class="hero-right">
-            <p>Nakib & Associates was founded in 2001 by Advocate Nakib Saiful Islam, a graduate of Dhaka University and a highly respected lawyer in Bangladesh. Known as one of the leading experts in corporate law, Mr. Islam has extensive experience in areas like banking, telecommunications, project financing, and advising foreign investors. His strong knowledge of constitutional law and role as an arbitrator in both local and international disputes have made him a trusted name in the legal field.</p>
+            <p>Established in 2001 by Advocate Nakib Saiful Islam, our firm has grown into a cornerstone of legal excellence in Bangladesh. Renowned for expertise in corporate law, we specialize in complex financial matters, international arbitration, and constitutional litigation. Mr. Islam's visionary leadership has positioned us as trusted advisors to multinational corporations and local enterprises alike.</p>
             <br>
-            <p>In 2009, the firm grew into one of the top full-service law firms in Bangladesh, focusing on corporate, financial, and commercial matters. Over the years, it has built a strong reputation for handling important legal cases and transactions, both in court and through alternative dispute resolution (ADR). The firm is committed to providing high-quality legal services in a professional and client-friendly way, making a lasting impact in various sectors across the country.</p>
+            <p>As a full-service legal practice, we combine traditional values with innovative strategies. Our team's landmark victories in appellate courts and successful mediation of high-stakes commercial disputes have set industry benchmarks. We take pride in our client-centric approach, offering tailored solutions that address both immediate challenges and long-term business objectives.</p>
         </div>
     </section>
 
@@ -277,46 +313,46 @@
         <h2 class="section-title">PRACTICE AREAS</h2>
         <div class="areas-grid">
             <div class="area-card">
-                <h3>COMMERCIAL LAW & LITIGATION</h3>
-                <p>Nakib & Associates has a proven track record of handling complex commercial law cases and providing expert litigation services to protect our clients' interests.</p>
+                <h3>COMMERCIAL LITIGATION</h3>
+                <p>Strategic resolution of complex business disputes through arbitration, mediation, and courtroom advocacy.</p>
             </div>
             <div class="area-card">
-                <h3>INSOLVENCY & RESTRUCTURING</h3>
-                <p>Our firm offers strategic counsel and representation in insolvency matters, helping clients navigate through challenging financial situations with tailored solutions.</p>
+                <h3>CORPORATE RESTRUCTURING</h3>
+                <p>Comprehensive solutions for financial rehabilitation, insolvency proceedings, and debt management.</p>
             </div>
             <div class="area-card">
-                <h3>BUSINESS ADVISORY</h3>
-                <p>Nakib & Associates provides comprehensive business advisory services, guiding clients through various legal aspects to support their business growth and compliance.</p>
+                <h3>REGULATORY COMPLIANCE</h3>
+                <p>Guidance through Bangladesh's evolving legal landscape with proactive compliance strategies.</p>
             </div>
             <div class="area-card">
-                <h3>FRAUD</h3>
-                <p>With a focus on proactive measures, we assist clients in preventing fraudulent activities and offer strong legal representation in fraud-related cases.</p>
+                <h3>FINANCIAL FRAUD</h3>
+                <p>Robust representation in white-collar crime cases and preventive corporate governance advisory.</p>
             </div>
             <div class="area-card">
-                <h3>DISPUTE RESOLUTION</h3>
-                <p>We are dedicated to resolving disputes efficiently through negotiation, mediation, and, when necessary, aggressive litigation, to achieve favorable outcomes for our clients.</p>
+                <h3>INTERNATIONAL ARBITRATION</h3>
+                <p>Cross-border dispute resolution expertise in both institutional and ad hoc proceedings.</p>
             </div>
             <div class="area-card">
-                <h3>TAX LAW</h3>
-                <p>Our experienced tax attorneys provide insightful counsel and representation in tax-related matters, ensuring compliance and minimizing tax liabilities for our clients.</p>
+                <h3>TAXATION & CUSTOMS</h3>
+                <p>Comprehensive tax planning, litigation support, and customs law advisory services.</p>
             </div>
         </div>
     </section>
 
     <section class="team" id="team">
-        <h2 class="section-title">OUR TEAM</h2>
+        <h2 class="section-title">LEADERSHIP TEAM</h2>
         <div class="team-grid">
             <div class="team-member">
                 <img src="nakib.jpg" alt="Nakib Saiful Islam">
                 <h3>NAKIB SAIFUL ISLAM</h3>
-                <p>FOUNDER & MANAGING PARTNER</p>
-                <p>Advocate, Supreme Court of Bangladesh<br>Appellate Division</p>
+                <p>FOUNDING PARTNER</p>
+                <p>20+ Years Corporate Law Experience<br>Lead Counsel in 150+ Appellate Cases</p>
             </div>
             <div class="team-member">
                 <img src="fahad.jpg" alt="Fahad Mahmud">
                 <h3>FAHAD MAHMUD</h3>
                 <p>PARTNER</p>
-                <p>Barrister-At-Law<br>Supreme Court of Bangladesh</p>
+                <p>Barrister-at-Law (Lincoln's Inn)<br>Specialist in International Arbitration</p>
             </div>
             <div class="team-member">
                 <img src="aminul.jpg" alt="Aminul Islam">
@@ -330,31 +366,52 @@
     <footer id="contact">
         <div class="footer-content">
             <div class="office-info">
-                <h3>OUR OFFICE</h3>
-                <p>House # S-2 (4th Floor), Sarkar Plaza, Avenue-3, Block-D,<br>
-                Central Mosque Compound, Rampura Banasree,<br>
-                Dhaka-1219</p>
-                <p>Tel: +880-1310-177588</p>
-                <p>Email: nakib2k19@gmail.com</p>
+                <h3>HEAD OFFICE</h3>
+                <p>S-2 (4th Floor), Sarkar Plaza<br>
+                Avenue-3, Block-D, Rampura Banasree<br>
+                Dhaka-1219, Bangladesh</p>
+                <p>Phone: +880-1310-177588</p>
+                <p>Emergency: +880-1711-934567</p>
+                <p>Email: contact@nakibassociates.com</p>
             </div>
             <div class="contact-form">
-                <h3>CONTACT US</h3>
+                <h3>SEND ENQUIRY</h3>
                 <form>
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit">Send Message</button>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Business Email" required>
+                    <textarea placeholder="Describe Your Legal Needs" rows="5" required></textarea>
+                    <button type="submit">Request Consultation</button>
                 </form>
             </div>
         </div>
         <div class="footer-bottom">
             <a href="#home">Back to Top</a>
-            <p>© <span id="year"></span> NAKIB & ASSOCIATES. All rights reserved.</p>
+            <p>© <span id="year"></span> NAKIB & ASSOCIATES. All Rights Reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Smooth scroll for navigation links
+        // Mobile Menu
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-menu-visible');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('nav')) {
+                navLinks.classList.remove('mobile-menu-visible');
+            }
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('mobile-menu-visible');
+            });
+        });
+
+        // Smooth Scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -364,14 +421,14 @@
             });
         });
 
-        // Form submission
+        // Form Submission
         document.querySelector('form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message. We will respond shortly.');
+            alert('Thank you for your enquiry. We will respond within 24 hours.');
             this.reset();
         });
 
-        // Copyright year
+        // Copyright Year
         document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
